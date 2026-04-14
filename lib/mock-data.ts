@@ -1,4 +1,5 @@
 export const SITE_LOGO_SRC = "/razaoautomovel.svg";
+export const SITE_LOGO_WHITE_SRC = "/razaoautomovel-white.svg";
 
 export const SOCIAL_LINKS = {
   facebookHref: "https://www.facebook.com/RazaoAutomovel/",

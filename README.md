@@ -1,15 +1,21 @@
-# Razão Automóvel
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="public/razaoautomovel-white.svg">
+    <source media="(prefers-color-scheme: light)" srcset="public/razaoautomovel.svg">
+    <img src="public/razaoautomovel-white.svg" alt="Razão Automóvel" width="320">
+  </picture>
+</p>
 
-Help center and FAQ for Razão Automóvel — includes a simplified version and a full-featured version with search, categories, and dark mode.
+Help center and FAQ for Razão Automóvel - includes a simplified version and a full-featured version with search, categories, and dark mode.
 
 ## Stack
 
-- **Next.js 16** (App Router) — React framework with server components and file-based routing
-- **Tailwind CSS 4** — utility-first CSS
-- **shadcn/ui** (with Base UI) — accessible, composable components (accordion, input, card, button, etc.)
-- **Storybook 10** — isolated component development and documentation
-- **TypeScript** — static typing
-- **Lucide React** — icons
+- **Next.js 16** (App Router) - React framework with server components and file-based routing
+- **Tailwind CSS 4** - utility-first CSS
+- **shadcn/ui** (with Base UI) - accessible, composable components (accordion, input, card, button, etc.)
+- **Storybook 10** - isolated component development and documentation
+- **TypeScript** - static typing
+- **Lucide React** - icons
 
 ## Getting started
 

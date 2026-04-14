@@ -9,11 +9,12 @@ import {
 } from "@/components/social-icons";
 import { ThemeToggle } from "@/components/theme-toggle/theme-toggle";
 import { cn } from "@/lib/utils";
-import { SITE_LOGO_SRC, SOCIAL_LINKS } from "@/lib/mock-data";
+import { SITE_LOGO_SRC, SITE_LOGO_WHITE_SRC, SOCIAL_LINKS } from "@/lib/mock-data";
 
 export type SiteNavbarProps = {
   className?: string;
   logoSrc?: string;
+  logoWhiteSrc?: string;
   logoAlt?: string;
   facebookHref?: string;
   instagramHref?: string;
@@ -25,6 +26,7 @@ export type SiteNavbarProps = {
 export function SiteNavbar({
   className,
   logoSrc = SITE_LOGO_SRC,
+  logoWhiteSrc = SITE_LOGO_WHITE_SRC,
   logoAlt = "Razão Automóvel",
   facebookHref = SOCIAL_LINKS.facebookHref,
   instagramHref = SOCIAL_LINKS.instagramHref,
@@ -75,7 +77,16 @@ export function SiteNavbar({
                 alt={logoAlt}
                 width={220}
                 height={30}
-                className="object-contain object-center dark:brightness-0 dark:invert"
+                className="object-contain object-center dark:hidden"
+                style={{ height: "30px" }}
+                priority
+              />
+              <Image
+                src={logoWhiteSrc}
+                alt={logoAlt}
+                width={220}
+                height={30}
+                className="hidden object-contain object-center dark:block"
                 style={{ height: "30px" }}
                 priority
               />
